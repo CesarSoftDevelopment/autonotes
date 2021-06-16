@@ -476,6 +476,17 @@ site_link: https://getbootstrap.com/docs/4.0/layout/overview/;
 }
 
 
+.btn-red {
+	margin-right: 10px;
+}
+
+.btn-red:hover {
+	background: #e32107;
+	color: white;
+
+}
+
+
 /* Large devices (desktops, 992px and up) */
 @media (max-width: 991.98px) {
 
