@@ -10,6 +10,7 @@ let senhaLogin = senha.value;
 
 verificacao();
 
+
 function verificacao() {
     if(emailLogin == '' && senhaLogin == ''){
         spanEmailSenha();
@@ -26,7 +27,7 @@ function verificacao() {
        
     }
         
-    }
+    };
 
 
     function spanEmail() {
@@ -39,7 +40,7 @@ function verificacao() {
         span.appendChild(mensagem);
 
         card.appendChild(span);
-    }
+    };
 
     function spanSenha() {
         removerSpans();
@@ -51,7 +52,7 @@ function verificacao() {
         span.appendChild(mensagem);
 
         card.appendChild(span);
-    }
+    };
 
     function spanEmailSenha() {
         removerSpans();
@@ -63,7 +64,7 @@ function verificacao() {
         span.appendChild(mensagem);
 
         card.appendChild(span);
-    }
+    };
 
     function spanSuccess() {
         removerSpans();
@@ -77,16 +78,16 @@ function verificacao() {
         card.appendChild(span);
         paginaInicial();
 
-    }
+    };
 
 
 function removerSpans() {
-    let spans = document.querySelectorAll('span');
-        
+    let spans = document.querySelector('span');
+
         for(let i = 0; i < spans.length; i++){
             card.removeChild(spans[i]);
-        }
+        }   
 
-    }
+    };
 
 }
